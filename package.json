@@ -1,0 +1,19 @@
+{
+  "name": "flex-grid-sass",
+  "version": "0.0.0",
+  "description": "Flexbox grid for sass (scss). Inspired by http://flexboxgrid.com/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aharris/flex-grid-sass.git"
+  },
+  "author": "ashtonharris.me@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aharris/flex-grid-sass/issues"
+  },
+  "homepage": "https://github.com/aharris/flex-grid-sass#readme"
+}
