@@ -5,11 +5,11 @@
   "main": "index.js",
   "watch": {
     "build:scss": {
-			"patterns": [
-				"example"
-			],
-			"extensions": "scss"
-		}
+      "patterns": [
+        "example"
+      ],
+      "extensions": "scss"
+    }
   },
   "scripts": {
     "build:scss": "node-sass example/index.scss example/dist/index.css",
