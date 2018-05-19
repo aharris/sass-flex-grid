@@ -1,0 +1,987 @@
+.row-span, .row-col {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .row-span.reverse, .row-col.reverse {
+    flex-direction: row-reverse; }
+
+.col.reverse {
+  flex-direction: column-reverse; }
+
+@media screen and (min-width: 0) {
+  .row-col {
+    margin-right: -8px;
+    margin-left: -8px; }
+  .col-xs-1 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 25%;
+    max-width: 25%;
+    padding-right: 8px;
+    padding-left: 8px; }
+  .span-xs-1 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 25%;
+    max-width: 25%; }
+  .offset-xs-1 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 25%; }
+  .col-xs-2 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 50%;
+    max-width: 50%;
+    padding-right: 8px;
+    padding-left: 8px; }
+  .span-xs-2 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 50%;
+    max-width: 50%; }
+  .offset-xs-2 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 50%; }
+  .col-xs-3 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 75%;
+    max-width: 75%;
+    padding-right: 8px;
+    padding-left: 8px; }
+  .span-xs-3 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 75%;
+    max-width: 75%; }
+  .offset-xs-3 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 75%; }
+  .col-xs-4 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 100%;
+    max-width: 100%;
+    padding-right: 8px;
+    padding-left: 8px; }
+  .span-xs-4 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 100%;
+    max-width: 100%; }
+  .offset-xs-4 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 100%; }
+  .start-xs {
+    justify-content: flex-start;
+    text-align: start; }
+  .center-xs {
+    justify-content: center;
+    text-align: center; }
+  .end-xs {
+    justify-content: flex-end;
+    text-align: end; }
+  .top-xs {
+    align-items: flex-start; }
+  .middle-xs {
+    align-items: center; }
+  .bottom-xs {
+    align-items: flex-end; }
+  .around-xs {
+    justify-content: space-around; }
+  .between-xs {
+    justify-content: space-between; }
+  .first-xs {
+    order: -1; }
+  .last-xs {
+    order: 1; } }
+
+@media screen and (min-width: 36em) {
+  .row-col {
+    margin-right: -8px;
+    margin-left: -8px; }
+  .col-sm-1 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 25%;
+    max-width: 25%;
+    padding-right: 8px;
+    padding-left: 8px; }
+  .span-sm-1 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 25%;
+    max-width: 25%; }
+  .offset-sm-1 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 25%; }
+  .col-sm-2 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 50%;
+    max-width: 50%;
+    padding-right: 8px;
+    padding-left: 8px; }
+  .span-sm-2 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 50%;
+    max-width: 50%; }
+  .offset-sm-2 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 50%; }
+  .col-sm-3 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 75%;
+    max-width: 75%;
+    padding-right: 8px;
+    padding-left: 8px; }
+  .span-sm-3 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 75%;
+    max-width: 75%; }
+  .offset-sm-3 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 75%; }
+  .col-sm-4 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 100%;
+    max-width: 100%;
+    padding-right: 8px;
+    padding-left: 8px; }
+  .span-sm-4 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 100%;
+    max-width: 100%; }
+  .offset-sm-4 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 100%; }
+  .start-sm {
+    justify-content: flex-start;
+    text-align: start; }
+  .center-sm {
+    justify-content: center;
+    text-align: center; }
+  .end-sm {
+    justify-content: flex-end;
+    text-align: end; }
+  .top-sm {
+    align-items: flex-start; }
+  .middle-sm {
+    align-items: center; }
+  .bottom-sm {
+    align-items: flex-end; }
+  .around-sm {
+    justify-content: space-around; }
+  .between-sm {
+    justify-content: space-between; }
+  .first-sm {
+    order: -1; }
+  .last-sm {
+    order: 1; } }
+
+@media screen and (min-width: 48em) {
+  .row-col {
+    margin-right: -12px;
+    margin-left: -12px; }
+  .col-md-1 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 12.5%;
+    max-width: 12.5%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-md-1 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 12.5%;
+    max-width: 12.5%; }
+  .offset-md-1 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 12.5%; }
+  .col-md-2 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 25%;
+    max-width: 25%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-md-2 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 25%;
+    max-width: 25%; }
+  .offset-md-2 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 25%; }
+  .col-md-3 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 37.5%;
+    max-width: 37.5%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-md-3 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 37.5%;
+    max-width: 37.5%; }
+  .offset-md-3 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 37.5%; }
+  .col-md-4 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 50%;
+    max-width: 50%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-md-4 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 50%;
+    max-width: 50%; }
+  .offset-md-4 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 50%; }
+  .col-md-5 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 62.5%;
+    max-width: 62.5%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-md-5 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 62.5%;
+    max-width: 62.5%; }
+  .offset-md-5 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 62.5%; }
+  .col-md-6 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 75%;
+    max-width: 75%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-md-6 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 75%;
+    max-width: 75%; }
+  .offset-md-6 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 75%; }
+  .col-md-7 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 87.5%;
+    max-width: 87.5%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-md-7 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 87.5%;
+    max-width: 87.5%; }
+  .offset-md-7 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 87.5%; }
+  .col-md-8 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 100%;
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-md-8 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 100%;
+    max-width: 100%; }
+  .offset-md-8 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 100%; }
+  .start-md {
+    justify-content: flex-start;
+    text-align: start; }
+  .center-md {
+    justify-content: center;
+    text-align: center; }
+  .end-md {
+    justify-content: flex-end;
+    text-align: end; }
+  .top-md {
+    align-items: flex-start; }
+  .middle-md {
+    align-items: center; }
+  .bottom-md {
+    align-items: flex-end; }
+  .around-md {
+    justify-content: space-around; }
+  .between-md {
+    justify-content: space-between; }
+  .first-md {
+    order: -1; }
+  .last-md {
+    order: 1; } }
+
+@media screen and (min-width: 64em) {
+  .row-col {
+    margin-right: -12px;
+    margin-left: -12px; }
+  .col-lg-1 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 8.33333%;
+    max-width: 8.33333%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-lg-1 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 8.33333%;
+    max-width: 8.33333%; }
+  .offset-lg-1 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 8.33333%; }
+  .col-lg-2 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 16.66667%;
+    max-width: 16.66667%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-lg-2 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 16.66667%;
+    max-width: 16.66667%; }
+  .offset-lg-2 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 16.66667%; }
+  .col-lg-3 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 25%;
+    max-width: 25%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-lg-3 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 25%;
+    max-width: 25%; }
+  .offset-lg-3 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 25%; }
+  .col-lg-4 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 33.33333%;
+    max-width: 33.33333%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-lg-4 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 33.33333%;
+    max-width: 33.33333%; }
+  .offset-lg-4 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 33.33333%; }
+  .col-lg-5 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 41.66667%;
+    max-width: 41.66667%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-lg-5 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 41.66667%;
+    max-width: 41.66667%; }
+  .offset-lg-5 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 41.66667%; }
+  .col-lg-6 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 50%;
+    max-width: 50%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-lg-6 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 50%;
+    max-width: 50%; }
+  .offset-lg-6 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 50%; }
+  .col-lg-7 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 58.33333%;
+    max-width: 58.33333%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-lg-7 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 58.33333%;
+    max-width: 58.33333%; }
+  .offset-lg-7 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 58.33333%; }
+  .col-lg-8 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 66.66667%;
+    max-width: 66.66667%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-lg-8 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 66.66667%;
+    max-width: 66.66667%; }
+  .offset-lg-8 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 66.66667%; }
+  .col-lg-9 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 75%;
+    max-width: 75%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-lg-9 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 75%;
+    max-width: 75%; }
+  .offset-lg-9 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 75%; }
+  .col-lg-10 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 83.33333%;
+    max-width: 83.33333%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-lg-10 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 83.33333%;
+    max-width: 83.33333%; }
+  .offset-lg-10 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 83.33333%; }
+  .col-lg-11 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 91.66667%;
+    max-width: 91.66667%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-lg-11 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 91.66667%;
+    max-width: 91.66667%; }
+  .offset-lg-11 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 91.66667%; }
+  .col-lg-12 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 100%;
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-lg-12 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 100%;
+    max-width: 100%; }
+  .offset-lg-12 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 100%; }
+  .start-lg {
+    justify-content: flex-start;
+    text-align: start; }
+  .center-lg {
+    justify-content: center;
+    text-align: center; }
+  .end-lg {
+    justify-content: flex-end;
+    text-align: end; }
+  .top-lg {
+    align-items: flex-start; }
+  .middle-lg {
+    align-items: center; }
+  .bottom-lg {
+    align-items: flex-end; }
+  .around-lg {
+    justify-content: space-around; }
+  .between-lg {
+    justify-content: space-between; }
+  .first-lg {
+    order: -1; }
+  .last-lg {
+    order: 1; } }
+
+@media screen and (min-width: 90em) {
+  .row-col {
+    margin-right: -12px;
+    margin-left: -12px; }
+  .col-xl-1 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 6.25%;
+    max-width: 6.25%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-xl-1 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 6.25%;
+    max-width: 6.25%; }
+  .offset-xl-1 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 6.25%; }
+  .col-xl-2 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 12.5%;
+    max-width: 12.5%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-xl-2 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 12.5%;
+    max-width: 12.5%; }
+  .offset-xl-2 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 12.5%; }
+  .col-xl-3 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 18.75%;
+    max-width: 18.75%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-xl-3 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 18.75%;
+    max-width: 18.75%; }
+  .offset-xl-3 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 18.75%; }
+  .col-xl-4 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 25%;
+    max-width: 25%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-xl-4 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 25%;
+    max-width: 25%; }
+  .offset-xl-4 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 25%; }
+  .col-xl-5 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 31.25%;
+    max-width: 31.25%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-xl-5 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 31.25%;
+    max-width: 31.25%; }
+  .offset-xl-5 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 31.25%; }
+  .col-xl-6 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 37.5%;
+    max-width: 37.5%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-xl-6 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 37.5%;
+    max-width: 37.5%; }
+  .offset-xl-6 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 37.5%; }
+  .col-xl-7 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 43.75%;
+    max-width: 43.75%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-xl-7 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 43.75%;
+    max-width: 43.75%; }
+  .offset-xl-7 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 43.75%; }
+  .col-xl-8 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 50%;
+    max-width: 50%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-xl-8 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 50%;
+    max-width: 50%; }
+  .offset-xl-8 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 50%; }
+  .col-xl-9 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 56.25%;
+    max-width: 56.25%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-xl-9 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 56.25%;
+    max-width: 56.25%; }
+  .offset-xl-9 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 56.25%; }
+  .col-xl-10 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 62.5%;
+    max-width: 62.5%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-xl-10 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 62.5%;
+    max-width: 62.5%; }
+  .offset-xl-10 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 62.5%; }
+  .col-xl-11 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 68.75%;
+    max-width: 68.75%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-xl-11 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 68.75%;
+    max-width: 68.75%; }
+  .offset-xl-11 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 68.75%; }
+  .col-xl-12 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 75%;
+    max-width: 75%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-xl-12 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 75%;
+    max-width: 75%; }
+  .offset-xl-12 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 75%; }
+  .col-xl-13 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 81.25%;
+    max-width: 81.25%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-xl-13 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 81.25%;
+    max-width: 81.25%; }
+  .offset-xl-13 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 81.25%; }
+  .col-xl-14 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 87.5%;
+    max-width: 87.5%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-xl-14 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 87.5%;
+    max-width: 87.5%; }
+  .offset-xl-14 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 87.5%; }
+  .col-xl-15 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 93.75%;
+    max-width: 93.75%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-xl-15 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 93.75%;
+    max-width: 93.75%; }
+  .offset-xl-15 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 93.75%; }
+  .col-xl-16 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 100%;
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px; }
+  .span-xl-16 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    flex-basis: 100%;
+    max-width: 100%; }
+  .offset-xl-16 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    margin-left: 100%; }
+  .start-xl {
+    justify-content: flex-start;
+    text-align: start; }
+  .center-xl {
+    justify-content: center;
+    text-align: center; }
+  .end-xl {
+    justify-content: flex-end;
+    text-align: end; }
+  .top-xl {
+    align-items: flex-start; }
+  .middle-xl {
+    align-items: center; }
+  .bottom-xl {
+    align-items: flex-end; }
+  .around-xl {
+    justify-content: space-around; }
+  .between-xl {
+    justify-content: space-between; }
+  .first-xl {
+    order: -1; }
+  .last-xl {
+    order: 1; } }

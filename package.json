@@ -3,8 +3,19 @@
   "version": "0.0.0",
   "description": "Flexbox grid for sass (scss). Inspired by http://flexboxgrid.com/",
   "main": "index.js",
+  "watch": {
+    "build:scss": {
+			"patterns": [
+				"example"
+			],
+			"extensions": "scss"
+		}
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:scss": "node-sass example/index.scss example/dist/index.css",
+    "start": "node-sass index.scss example/dist/grid.css && concurrently \"npm run watch\" \"live-server --port=8000 --open='example' --watch='example'\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm-watch"
   },
   "repository": {
     "type": "git",
@@ -18,5 +29,11 @@
   "homepage": "https://github.com/aharris/sass-flex-grid#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "live-server": "1.2.0",
+    "node-sass": "4.9.0",
+    "npm-watch": "0.3.0"
   }
 }
