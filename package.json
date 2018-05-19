@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/aharris/flex-grid-sass/issues"
   },
-  "homepage": "https://github.com/aharris/flex-grid-sass#readme"
+	"homepage": "https://github.com/aharris/flex-grid-sass#readme",
+	"publishConfig":{"registry":"https://registry.npmjs.org/"}
 }
