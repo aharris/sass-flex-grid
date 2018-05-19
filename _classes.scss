@@ -1,0 +1,102 @@
+.cc-span-row {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cc-col-row {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cc-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.cc-col.reverse {
+  flex-direction: column-reverse;
+}
+
+@each $label, $map in $sfg-breakpoints {
+  @include mq(map-get($map, min-width)) {
+    .cc-col-row {
+      margin-right: -#{map-get($map, gutter) / 2};
+      margin-left: -#{map-get($map, gutter) / 2};
+    }
+
+    @for $i from 1 through map-get($map, columns) {
+      .cc-col-#{map-get($map, name)}-#{$i} {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        position: relative;
+        flex-basis: $i/map-get($map, columns) * 100 + unquote("%");
+        max-width: $i/map-get($map, columns) * 100 + unquote("%");
+        padding-right: map-get($map, gutter) / 2;
+        padding-left: map-get($map, gutter) / 2;
+      }
+
+      .cc-span-#{map-get($map, name)}-#{$i} {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        position: relative;
+        flex-basis: $i/map-get($map, columns) * 100%;
+        max-width: $i/map-get($map, columns) * 100%;
+      }
+
+      .cc-col-#{map-get($map, name)}-offset-#{$i} {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        position: relative;
+        margin-left: $i/map-get($map, columns) * 100%;
+      }
+    }
+
+    .cc-start-#{map-get($map, name)} {
+      justify-content: flex-start;
+      text-align: start;
+    }
+
+    .cc-center-#{map-get($map, name)} {
+      justify-content: center;
+      text-align: center;
+    }
+
+    .cc-end-#{map-get($map, name)} {
+      justify-content: flex-end;
+      text-align: end;
+    }
+
+    .cc-top-#{map-get($map, name)} {
+      align-items: flex-start;
+    }
+
+    .cc-middle-#{map-get($map, name)} {
+      align-items: center;
+    }
+
+    .cc-bottom-#{map-get($map, name)} {
+      align-items: flex-end;
+    }
+
+    .cc-around-#{map-get($map, name)} {
+      justify-content: space-around;
+    }
+
+    .cc-between-#{map-get($map, name)} {
+      justify-content: space-between;
+    }
+
+    .cc-first-#{map-get($map, name)} {
+      order: -1;
+    }
+
+    .cc-last-#{map-get($map, name)} {
+      order: 1;
+    }
+  }
+}

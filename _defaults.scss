@@ -1,0 +1,35 @@
+$default-grid-breakpoints: (
+  extra-small: (
+    name: xs,
+    columns: 4,
+    gutter: 16px,
+    min-width: 0
+  ),
+  small: (
+    name: sm,
+    columns: 4,
+    gutter: 16px,
+    min-width: 36em
+  ),
+  medium: (
+    name: md,
+    columns: 8,
+    gutter: 16px,
+    min-width: 48em
+  ),
+  large: (
+    name: lg,
+    columns: 12,
+    gutter: 32px,
+    min-width: 64em
+  ),
+  extra-large: (
+    name: xl,
+    columns: 16,
+    gutter: 32px,
+    min-width: 90em
+  )
+);
+
+$sfg-breakpoints: $default-grid-breakpoints;
+
