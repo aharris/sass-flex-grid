@@ -1,7 +1,3 @@
-@if global-variable-exists(grid-breakpoints) {
-	$sfg-breakpoints: $grid-breakpoints;
-}
-
 @mixin mq($mq-breakpoint, $mq-breakpoints: $sfg-breakpoints) {
 	@if map-has-key($mq-breakpoints, $mq-breakpoint) {
 	  $mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);

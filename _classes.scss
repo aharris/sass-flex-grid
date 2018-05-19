@@ -1,72 +1,72 @@
-.row-span,.row-col {
+.#{$sfg-prefix}row-span, .#{$sfg-prefix}row-col {
 	@include row();
 
-	&.reverse {
+	&.#{$sfg-prefix}reverse {
 		@include row-reverse();
 	}
 }
 
-.col.reverse {
+.#{$sfg-prefix}col.#{$sfg-prefix}reverse {
   flex-direction: column-reverse;
 }
 
 @each $label, $map in $sfg-breakpoints {
   @include mq(map-get($map, min-width)) {
-    .row-col {
+    .#{$sfg-prefix}row-col {
       @include row-col(map-get($map, gutter));
     }
 
     @for $i from 1 through map-get($map, columns) {
-      .col-#{map-get($map, name)}-#{$i} {
+      .#{$sfg-prefix}col-#{map-get($map, name)}-#{$i} {
 				@include col($i/map-get($map, columns), map-get($map, gutter));
       }
 
-      .span-#{map-get($map, name)}-#{$i} {
+      .#{$sfg-prefix}span-#{map-get($map, name)}-#{$i} {
 				@include span($i/map-get($map, columns));
       }
 
-      .offset-#{map-get($map, name)}-#{$i} {
+      .#{$sfg-prefix}offset-#{map-get($map, name)}-#{$i} {
 				@include offset($i/map-get($map, columns));
       }
     }
 
-    .start-#{map-get($map, name)} {
+    .#{$sfg-prefix}start-#{map-get($map, name)} {
 			@include start();
     }
 
-    .center-#{map-get($map, name)} {
+    .#{$sfg-prefix}center-#{map-get($map, name)} {
       @include center();
     }
 
-    .end-#{map-get($map, name)} {
+    .#{$sfg-prefix}end-#{map-get($map, name)} {
       @include end();
     }
 
-    .top-#{map-get($map, name)} {
+    .#{$sfg-prefix}top-#{map-get($map, name)} {
       @include top();
     }
 
-    .middle-#{map-get($map, name)} {
+    .#{$sfg-prefix}middle-#{map-get($map, name)} {
       @include middle();
     }
 
-    .bottom-#{map-get($map, name)} {
+    .#{$sfg-prefix}bottom-#{map-get($map, name)} {
       @include bottom();
     }
 
-    .around-#{map-get($map, name)} {
+    .#{$sfg-prefix}around-#{map-get($map, name)} {
       @include around();
     }
 
-    .between-#{map-get($map, name)} {
+    .#{$sfg-prefix}between-#{map-get($map, name)} {
       @include between();
     }
 
-    .first-#{map-get($map, name)} {
+    .#{$sfg-prefix}first-#{map-get($map, name)} {
 			@include first();
     }
 
-    .last-#{map-get($map, name)} {
+    .#{$sfg-prefix}last-#{map-get($map, name)} {
       @include last();
     }
   }

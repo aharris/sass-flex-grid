@@ -1,4 +1,6 @@
-$default-grid-breakpoints: (
+$sfg-default-prefix: '';
+
+$sfg-default-grid-breakpoints: (
   extra-small: (
     name: xs,
     columns: 4,
@@ -31,5 +33,12 @@ $default-grid-breakpoints: (
   )
 );
 
-$sfg-breakpoints: $default-grid-breakpoints;
+$sfg-breakpoints: $sfg-default-grid-breakpoints;
+@if global-variable-exists(grid-breakpoints) {
+	$sfg-breakpoints: $grid-breakpoints;
+}
 
+$sfg-prefix: $sfg-default-prefix;
+@if global-variable-exists(grid-prefix) {
+	$sfg-prefix: $grid-prefix;
+}
