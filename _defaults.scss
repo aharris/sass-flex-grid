@@ -14,19 +14,19 @@ $default-grid-breakpoints: (
   medium: (
     name: md,
     columns: 8,
-    gutter: 16px,
+    gutter: 24px,
     min-width: 48em
   ),
   large: (
     name: lg,
     columns: 12,
-    gutter: 32px,
+    gutter: 24px,
     min-width: 64em
   ),
   extra-large: (
     name: xl,
     columns: 16,
-    gutter: 32px,
+    gutter: 24px,
     min-width: 90em
   )
 );

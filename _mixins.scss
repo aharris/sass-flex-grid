@@ -1,0 +1,84 @@
+@mixin col($ratios:1, $gutter: 0) {
+	box-sizing: border-box;
+	flex: 0 0 auto;
+	position: relative;
+	flex-basis: $ratios * 100 + unquote("%");
+	max-width: $ratios * 100 + unquote("%");
+	padding-right: $gutter / 2;
+	padding-left: $gutter / 2;
+}
+
+@mixin offset($ratios:1) {
+	box-sizing: border-box;
+	flex: 0 0 auto;
+	position: relative;
+	margin-left: $ratios * 100%;
+}
+
+@mixin row() {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@mixin row-col($gutter: 0) {
+	margin-right: -#{$gutter / 2};
+	margin-left: -#{$gutter / 2};
+}
+
+@mixin row-reverse() {
+	flex-direction: row-reverse;
+}
+
+@mixin span($ratios:1) {
+	box-sizing: border-box;
+	flex: 0 0 auto;
+	position: relative;
+	flex-basis: $ratios * 100%;
+	max-width: $ratios * 100%;
+}
+
+@mixin start() {
+	justify-content: flex-start;
+	text-align: start;
+}
+
+@mixin center {
+	justify-content: center;
+	text-align: center;
+}
+
+@mixin end {
+	justify-content: flex-end;
+	text-align: end;
+}
+
+@mixin top {
+	align-items: flex-start;
+}
+
+@mixin middle {
+	align-items: center;
+}
+
+@mixin bottom {
+	align-items: flex-end;
+}
+
+@mixin around {
+	justify-content: space-around;
+}
+
+@mixin between {
+	justify-content: space-between;
+}
+
+@mixin first {
+	order: -1;
+}
+
+@mixin last {
+	order: 1;
+}

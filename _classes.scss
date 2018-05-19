@@ -1,102 +1,73 @@
-.cc-span-row {
-  box-sizing: border-box;
-  display: flex;
-  flex: 0 1 auto;
-  flex-direction: row;
-  flex-wrap: wrap;
+.row-span,.row-col {
+	@include row();
+
+	&.reverse {
+		@include row-reverse();
+	}
 }
 
-.cc-col-row {
-  box-sizing: border-box;
-  display: flex;
-  flex: 0 1 auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.cc-row.reverse {
-  flex-direction: row-reverse;
-}
-
-.cc-col.reverse {
+.col.reverse {
   flex-direction: column-reverse;
 }
 
 @each $label, $map in $sfg-breakpoints {
   @include mq(map-get($map, min-width)) {
-    .cc-col-row {
-      margin-right: -#{map-get($map, gutter) / 2};
-      margin-left: -#{map-get($map, gutter) / 2};
+    .row-col {
+      @include row-col(map-get($map, gutter));
     }
 
     @for $i from 1 through map-get($map, columns) {
-      .cc-col-#{map-get($map, name)}-#{$i} {
-        box-sizing: border-box;
-        flex: 0 0 auto;
-        position: relative;
-        flex-basis: $i/map-get($map, columns) * 100 + unquote("%");
-        max-width: $i/map-get($map, columns) * 100 + unquote("%");
-        padding-right: map-get($map, gutter) / 2;
-        padding-left: map-get($map, gutter) / 2;
+      .col-#{map-get($map, name)}-#{$i} {
+				@include col($i/map-get($map, columns), map-get($map, gutter));
       }
 
-      .cc-span-#{map-get($map, name)}-#{$i} {
-        box-sizing: border-box;
-        flex: 0 0 auto;
-        position: relative;
-        flex-basis: $i/map-get($map, columns) * 100%;
-        max-width: $i/map-get($map, columns) * 100%;
+      .span-#{map-get($map, name)}-#{$i} {
+				@include span($i/map-get($map, columns));
       }
 
-      .cc-col-#{map-get($map, name)}-offset-#{$i} {
-        box-sizing: border-box;
-        flex: 0 0 auto;
-        position: relative;
-        margin-left: $i/map-get($map, columns) * 100%;
+      .offset-#{map-get($map, name)}-#{$i} {
+				@include offset($i/map-get($map, columns));
       }
     }
 
-    .cc-start-#{map-get($map, name)} {
-      justify-content: flex-start;
-      text-align: start;
+    .start-#{map-get($map, name)} {
+			@include start();
     }
 
-    .cc-center-#{map-get($map, name)} {
-      justify-content: center;
-      text-align: center;
+    .center-#{map-get($map, name)} {
+      @include center();
     }
 
-    .cc-end-#{map-get($map, name)} {
-      justify-content: flex-end;
-      text-align: end;
+    .end-#{map-get($map, name)} {
+      @include end();
     }
 
-    .cc-top-#{map-get($map, name)} {
-      align-items: flex-start;
+    .top-#{map-get($map, name)} {
+      @include top();
     }
 
-    .cc-middle-#{map-get($map, name)} {
-      align-items: center;
+    .middle-#{map-get($map, name)} {
+      @include middle();
     }
 
-    .cc-bottom-#{map-get($map, name)} {
-      align-items: flex-end;
+    .bottom-#{map-get($map, name)} {
+      @include bottom();
     }
 
-    .cc-around-#{map-get($map, name)} {
-      justify-content: space-around;
+    .around-#{map-get($map, name)} {
+      @include around();
     }
 
-    .cc-between-#{map-get($map, name)} {
-      justify-content: space-between;
+    .between-#{map-get($map, name)} {
+      @include between();
     }
 
-    .cc-first-#{map-get($map, name)} {
-      order: -1;
+    .first-#{map-get($map, name)} {
+			@include first();
     }
 
-    .cc-last-#{map-get($map, name)} {
-      order: 1;
+    .last-#{map-get($map, name)} {
+      @include last();
     }
   }
 }
