@@ -17,20 +17,40 @@
 
 			<h2>About</h2>
 
-			<p>This Was inspired by http://flexboxgrid.com/ converted to sass (scss) with some updates for full control and customization.</p>
+			<p>This was inspired by <a href="http://flexboxgrid.com/" target="_blank">http://flexboxgrid.com/</a> converted to sass (scss) with some updates for full control and customization.</p>
+
+			<h3>NPM Install:</h3>
+			<code>$ npm i sass-flex-grid --save</code>
+
+			<h3>Import to your scss file:</h3>
+			<code>@import '../node_modules/sass-flex-grid/index.scss';</code>
+
+			<div class="links">
+				<a href="https://www.npmjs.com/package/sass-flex-grid">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 7">
+						<path fill="#CB3837" d="M0,0v6h5v1h4v-1h9v-6"/>
+						<path fill="#FFF" d="M1,1v4h2v-3h1v3h1v-4h1v5h2v-4h1v2h-1v1h2v-4h1v4h2v-3h1v3h1v-3h1v3h1v-4"/>
+					</svg>
+				</a>
+
+				<a href="https://github.com/aharris/sass-flex-grid">
+					<img src="images/GitHub_Logo_White.png">
+				</a>
+			</div>
+
 		</div>
 	</header>
 	<main>
 		<section class="page-section">
 
-			<h2>Why</h2>
+			<h2>Why?</h2>
 
 			<p>This version adds some key features not available with other versions:</p>
 
-			<ul>
-				<li>
-					<p>Any number of breakpoint classes with one simple config</p>
-					<pre><code class="language-css">
+			<br>
+			<br>
+			<h3>Any number of breakpoint classes with one simple config</h3>
+			<pre><code class="language-css">
 $grid-breakpoints: (: (
 	extra-small: (
 		name: xs, // ".col-xs-*"
@@ -56,17 +76,17 @@ $grid-breakpoints: (: (
 		gutter: 24px, // 24 pixels between each column
 		min-width: 64em // min-with 1024px
 	)
-	);
-					</code></pre>
-				</li>
-				<li>
-					<p>Mixins for EVERYTHING</p>
-					<pre><code class="language-css">
+);
+			</code></pre>
+
+			<br><br>
+			<h3>Mixins for EVERYTHING</h3>
+			<pre><code class="language-css">
 .my-custom-column {
 	@include col(1/4, 16);
 }
-					</code></pre>
-					<pre><code class="language-css">
+			</code></pre>
+			<pre><code class="language-css">
 .my-custom-column {
 	box-sizing: border-box;
 	flex: 0 0 auto;
@@ -76,35 +96,35 @@ $grid-breakpoints: (: (
 	padding-right: 8;
 	padding-left: 8;
 }
-					</code></pre>
-				</li>
-				<li>
-					<p>Remove gutters for edge to edge layouts with 1 simple class <code>.no-gutter</code></p>
+			</code></pre>
 
-					<div class="row no-gutter">
-						<div class="col-xs"><div class="box"></div></div>
-						<div class="col-xs"><div class="box"></div></div>
-						<div class="col-xs"><div class="box"></div></div>
-						<div class="col-xs"><div class="box"></div></div>
-					</div>
-				</li>
-				<li>
-					<p>Ability to prefix the grid classes for namespacing</p>
-					<pre><code class="language-css">
+			<br><br>
+			<h3>Remove gutters for edge to edge layouts with 1 simple class <code>.no-gutter</code></h3>
+
+			<div class="row no-gutter">
+				<div class="col-xs"><div class="box"></div></div>
+				<div class="col-xs"><div class="box"></div></div>
+				<div class="col-xs"><div class="box"></div></div>
+				<div class="col-xs"><div class="box"></div></div>
+			</div>
+
+			<br><br>
+			<h3>Ability to prefix the grid classes for namespacing</h3>
+			<pre><code class="language-css">
 $grid-prefix: 'namespace-';
-					</code></pre>
-					<pre><code class="language-markup"><script type="prism-html-markup">
+			</code></pre>
+			<pre><code class="language-markup"><script type="prism-html-markup">
 <div class="namespace-row">
 	<div class="namespace-col-xs"><div class="box"></div></div>
 	<div class="namespace-col-xs"><div class="box"></div></div>
 	<div class="namespace-col-xs"><div class="box"></div></div>
 	<div class="namespace-col-xs"><div class="box"></div></div>
 </div>
-					</script></code></pre>
+			</script></code></pre>
 
-				</li>
-			</ul>
+		</section>
 
+		<section class="page-section">
 			<h2>Responsive</h2>
 
 			<p>Responsive modifiers enable specifying different column sizes, offsets, alignment and distribution at any viewport widths. Defaults are xs, sm, md, lg, and xl but you can add as many or as few breakpoints as you see fit.</p>

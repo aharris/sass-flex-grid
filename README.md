@@ -1,5 +1,7 @@
 # Flex Grid Sass
 
+Inspired by http://flexboxgrid.com/ converted to sass (scss) with some updates for full control and customization.
+
 ## Installation
 
 NPM Install:

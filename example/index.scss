@@ -28,6 +28,8 @@ $asbestos:	#7f8c8d;
   box-sizing: border-box;
 }
 
+
+
 h1 {
   font-size: 36px;
   font-weight: 800;
@@ -70,20 +72,50 @@ header {
 		font-size: 48px;
 	}
 
-  h1, p, h2 {
+	h3 {
+		margin-top: 2em;
+		margin-bottom: 1em;
+	}
+
+  h1, p, h2, h3 {
     color: #fff;
-  }
+	}
+
+	a {
+		color: #fff;
+	}
+
+	code {
+		background: $clouds;
+		padding: 1em;
+		margin-bottom: 1em;
+	}
 }
 
 .container {
-  max-width: 1280px;
-  padding: 48px;
+	padding: 48px;
+	position: relative;
 }
 
 .page-section {
   padding: 48px;
 }
 
+.links {
+	position: absolute;
+	right: 24px;
+	top: 24px;
+
+	a {
+		width: 120px;
+		display: inline-block;
+		padding: 1em;
+	}
+
+	img {
+		max-width: 100%;
+	}
+}
 
 
 .row-span, .row-col {
