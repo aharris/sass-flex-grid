@@ -1,4 +1,4 @@
-# Flex Grid Sass
+# Sass Flex Grid
 
 Inspired by http://flexboxgrid.com/ converted to sass (scss) with some updates for full control and customization.
 
