@@ -12,13 +12,16 @@
 </head>
 <body>
 	<header>
-		<h1>Sass Flex Grid</h1>
-	</header>
-	<main>
-		<section class="page-section">
+		<div class="container">
+			<h1>Sass Flex Grid</h1>
+
 			<h2>About</h2>
 
 			<p>This Was inspired by http://flexboxgrid.com/ converted to sass (scss) with some updates for full control and customization.</p>
+		</div>
+	</header>
+	<main>
+		<section class="page-section">
 
 			<h2>Why</h2>
 
@@ -130,17 +133,27 @@ $grid-prefix: 'namespace-';
 			<p>Percent based widths allow fluid resizing of columns and rows.</p>
 
 			<div class="row"><div class="col-xs-12"><div class="box-row"></div></div></div><div class="row"><div class="col-xs-1"><div class="box-row"></div></div><div class="col-xs-11"><div class="box-row"></div></div></div><div class="row"><div class="col-xs-2"><div class="box-row"></div></div><div class="col-xs-10"><div class="box-row"></div></div></div><div class="row"><div class="col-xs-3"><div class="box-row"></div></div><div class="col-xs-9"><div class="box-row"></div></div></div><div class="row"><div class="col-xs-4"><div class="box-row"></div></div><div class="col-xs-8"><div class="box-row"></div></div></div><div class="row"><div class="col-xs-5"><div class="box-row"></div></div><div class="col-xs-7"><div class="box-row"></div></div></div><div class="row"><div class="col-xs-6"><div class="box-row"></div></div><div class="col-xs-6"><div class="box-row"></div></div></div>
-		</section>
 
-		<pre><code class="language-css">
+			<pre><code class="language-css">
 .col-xs-2 {
 	flex-basis: 50%;
 }
-		</code></pre>
+			</code></pre>
+		</section>
 
 		<section class="page-section">
 			<h2>Simple Syntax</h2>
 			<p>All you need to remember is row, column, content.</p>
+
+			<pre><code class="language-markup">
+					<script type="prism-html-markup">
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box">12</div>
+    </div>
+</div>
+					</script>
+				</code></pre>
 		</section>
 
 		<section class="page-section">

@@ -1,3 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+* {
+  box-sizing: border-box; }
+
+h1 {
+  font-size: 36px;
+  font-weight: 800;
+  color: midnightBlue; }
+
+h2 {
+  font-size: 24px;
+  font-weight: 800; }
+
+h3 {
+  font-size: 20px;
+  font-weight: 800; }
+
+h4 {
+  font-size: 20px;
+  font-weight: 700; }
+
+h5 {
+  font-size: 18px;
+  font-weight: 700; }
+
+body {
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background: #ecf0f1;
+  margin: 0; }
+
+header {
+  background: #2c3e50;
+  padding: 1em; }
+  header h1 {
+    font-size: 48px; }
+  header h1, header p, header h2 {
+    color: #fff; }
+
+.container {
+  max-width: 1280px;
+  padding: 48px; }
+
+.page-section {
+  padding: 48px; }
+
 .row-span, .row-col {
   margin-top: 8px;
   margin-bottom: 8px; }
@@ -5,18 +52,18 @@
     margin-bottom: 0; }
 
 .box, .box-row, .box-large {
-  background-color: #666;
+  background-color: #2980b9;
   margin-bottom: 8px;
   text-align: center;
-  color: white;
+  color: #fff;
   padding: 1em; }
 
 .box-first, .box-nested {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.25);
   padding: 1em; }
 
 .box-large {
   height: 8em; }
 
 .no-gutter .col-xs:nth-child(odd) .box {
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: #3498db; }
