@@ -2,8 +2,3 @@
 @import '_helpers.scss';
 @import '_mixins.scss';
 @import '_classes.scss';
-
-
-.my-custom-column {
-	@include col(1/4, 16);
-}
