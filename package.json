@@ -13,6 +13,7 @@
   },
   "scripts": {
     "build:scss": "node-sass example/index.scss example/dist/index.css",
+    "build:lib:scss": "node-sass index.scss example/dist/grid.css",
     "start": "node-sass index.scss example/dist/grid.css && concurrently \"npm run watch\" \"live-server --port=8000 --open='example' --watch='example'\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npm-watch"
@@ -32,7 +33,7 @@
   },
   "devDependencies": {
     "concurrently": "^3.5.1",
-    "live-server": "1.2.0",
+    "live-server": "1.1.0",
     "node-sass": "4.9.0",
     "npm-watch": "0.3.0"
   }

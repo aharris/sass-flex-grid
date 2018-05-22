@@ -1,21 +1,21 @@
-$sfg-default-prefix: '';
+$sfg-default-prefix: 'namespace-';
 
 $sfg-default-grid-breakpoints: (
   extra-small: (
     name: xs,
-    columns: 4,
+    columns: 12,
     gutter: 16px,
     min-width: 0
   ),
   small: (
     name: sm,
-    columns: 4,
+    columns: 12,
     gutter: 16px,
     min-width: 36em
   ),
   medium: (
     name: md,
-    columns: 8,
+    columns: 12,
     gutter: 24px,
     min-width: 48em
   ),
@@ -24,12 +24,6 @@ $sfg-default-grid-breakpoints: (
     columns: 12,
     gutter: 24px,
     min-width: 64em
-  ),
-  extra-large: (
-    name: xl,
-    columns: 16,
-    gutter: 24px,
-    min-width: 90em
   )
 );
 

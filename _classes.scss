@@ -1,4 +1,4 @@
-.#{$sfg-prefix}row-span, .#{$sfg-prefix}row-col {
+.#{$sfg-prefix}row-span, .#{$sfg-prefix}row {
 	@include row();
 
 	&.#{$sfg-prefix}reverse {
@@ -12,20 +12,39 @@
 
 @each $label, $map in $sfg-breakpoints {
   @include mq(map-get($map, min-width)) {
-    .#{$sfg-prefix}row-col {
-      @include row-col(map-get($map, gutter));
-    }
+    .#{$sfg-prefix}row {
+			@include row-gutter(map-get($map, gutter));
+
+			&.no-gutter {
+				margin-right: 0;
+				margin-left: 0;
+			}
+		}
+
+		[class^='#{$sfg-prefix}col-'] {
+			.no-gutter & {
+				padding-right: 0;
+				padding-left: 0;
+			}
+		}
+
+		.#{$sfg-prefix}col-#{map-get($map, name)} {
+			flex-grow: 1;
+			flex-basis: 0;
+			max-width: 100%;
+			box-sizing: border-box;
+			box-flex: 0;
+
+			@include col-gutter(map-get($map, gutter));
+
+		}
 
     @for $i from 1 through map-get($map, columns) {
       .#{$sfg-prefix}col-#{map-get($map, name)}-#{$i} {
 				@include col($i/map-get($map, columns), map-get($map, gutter));
       }
 
-      .#{$sfg-prefix}span-#{map-get($map, name)}-#{$i} {
-				@include span($i/map-get($map, columns));
-      }
-
-      .#{$sfg-prefix}offset-#{map-get($map, name)}-#{$i} {
+      .#{$sfg-prefix}col-#{map-get($map, name)}-offset-#{$i} {
 				@include offset($i/map-get($map, columns));
       }
     }

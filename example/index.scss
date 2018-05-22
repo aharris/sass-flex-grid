@@ -1,3 +1,44 @@
 body {
-	background: red;
+	// background: red;
+}
+
+
+
+.row-span, .row-col {
+	margin-top: 8px;
+	margin-bottom: 8px;
+
+	> div:last-child {
+	.inner {
+		margin-bottom: 0;
+	}
+	}
+}
+
+
+.box, .box-row, .box-large  {
+	background-color: #666;
+	margin-bottom: 8px;
+	text-align: center;
+	color: white;
+	padding: 1em;
+}
+
+.box-first, .box-nested {
+	background-color: rgba(0, 0, 0, .5);
+	padding: 1em;
+}
+
+.box-large {
+	height: 8em;
+}
+
+.no-gutter {
+	.col-xs {
+		&:nth-child(odd) {
+			.box {
+				background-color: rgba(0, 0, 0, .5);
+			}
+		}
+	}
 }
