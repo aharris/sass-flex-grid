@@ -6,15 +6,15 @@
   "watch": {
     "build:scss": {
       "patterns": [
-        "example"
+        "docs"
       ],
       "extensions": "scss"
     }
   },
   "scripts": {
-    "build:scss": "node-sass example/index.scss example/dist/index.css",
-    "build:lib:scss": "node-sass index.scss example/dist/grid.css",
-    "start": "node-sass index.scss example/dist/grid.css && concurrently \"npm run watch\" \"live-server --port=8000 --open='example' --watch='example'\"",
+    "build:scss": "node-sass docs/index.scss docs/dist/index.css",
+    "build:lib:scss": "node-sass index.scss docs/dist/grid.css",
+    "start": "node-sass index.scss docs/dist/grid.css && concurrently \"npm run watch\" \"live-server --port=8000 --open='docs' --watch='docs'\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npm-watch"
   },
