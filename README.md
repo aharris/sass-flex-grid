@@ -101,7 +101,7 @@ $grid-breakpoints: (: (
 
 ### Prefixing
 
-YOu can add a prefix to all classes:
+You can add a prefix to all classes:
 
 ```
 $grid-prefix: 'namespace-';
