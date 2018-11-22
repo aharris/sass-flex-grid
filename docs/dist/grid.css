@@ -17,25 +17,26 @@
     .row.no-gutter {
       margin-right: 0;
       margin-left: 0; }
-  .no-gutter [class^='col-'] {
-    padding-right: 0;
-    padding-left: 0; }
+  [class^='myclass'], [class*=' myclass']
+[class^='col-'], [class*='col-'] {
+    padding-right: 8px;
+    padding-left: 8px; }
+    .no-gutter [class^='myclass'], .no-gutter [class*=' myclass']
+[class^='col-'], .no-gutter [class*='col-'] {
+      padding-right: 0;
+      padding-left: 0; }
   .col-xs {
     flex-grow: 1;
     flex-basis: 0;
     max-width: 100%;
     box-sizing: border-box;
-    box-flex: 0;
-    padding-right: 8px;
-    padding-left: 8px; }
+    box-flex: 0; }
   .col-xs-1 {
     box-sizing: border-box;
     flex: 0 0 auto;
     position: relative;
     flex-basis: 8.33333%;
-    max-width: 8.33333%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 8.33333%; }
   .col-xs-offset-1 {
     box-sizing: border-box;
     position: relative;
@@ -45,9 +46,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 16.66667%;
-    max-width: 16.66667%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 16.66667%; }
   .col-xs-offset-2 {
     box-sizing: border-box;
     position: relative;
@@ -57,9 +56,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 25%;
-    max-width: 25%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 25%; }
   .col-xs-offset-3 {
     box-sizing: border-box;
     position: relative;
@@ -69,9 +66,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 33.33333%;
-    max-width: 33.33333%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 33.33333%; }
   .col-xs-offset-4 {
     box-sizing: border-box;
     position: relative;
@@ -81,9 +76,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 41.66667%;
-    max-width: 41.66667%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 41.66667%; }
   .col-xs-offset-5 {
     box-sizing: border-box;
     position: relative;
@@ -93,9 +86,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 50%;
-    max-width: 50%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 50%; }
   .col-xs-offset-6 {
     box-sizing: border-box;
     position: relative;
@@ -105,9 +96,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 58.33333%;
-    max-width: 58.33333%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 58.33333%; }
   .col-xs-offset-7 {
     box-sizing: border-box;
     position: relative;
@@ -117,9 +106,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 66.66667%;
-    max-width: 66.66667%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 66.66667%; }
   .col-xs-offset-8 {
     box-sizing: border-box;
     position: relative;
@@ -129,9 +116,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 75%;
-    max-width: 75%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 75%; }
   .col-xs-offset-9 {
     box-sizing: border-box;
     position: relative;
@@ -141,9 +126,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 83.33333%;
-    max-width: 83.33333%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 83.33333%; }
   .col-xs-offset-10 {
     box-sizing: border-box;
     position: relative;
@@ -153,9 +136,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 91.66667%;
-    max-width: 91.66667%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 91.66667%; }
   .col-xs-offset-11 {
     box-sizing: border-box;
     position: relative;
@@ -165,9 +146,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 100%;
-    max-width: 100%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 100%; }
   .col-xs-offset-12 {
     box-sizing: border-box;
     position: relative;
@@ -203,25 +182,26 @@
     .row.no-gutter {
       margin-right: 0;
       margin-left: 0; }
-  .no-gutter [class^='col-'] {
-    padding-right: 0;
-    padding-left: 0; }
+  [class^='myclass'], [class*=' myclass']
+[class^='col-'], [class*='col-'] {
+    padding-right: 8px;
+    padding-left: 8px; }
+    .no-gutter [class^='myclass'], .no-gutter [class*=' myclass']
+[class^='col-'], .no-gutter [class*='col-'] {
+      padding-right: 0;
+      padding-left: 0; }
   .col-sm {
     flex-grow: 1;
     flex-basis: 0;
     max-width: 100%;
     box-sizing: border-box;
-    box-flex: 0;
-    padding-right: 8px;
-    padding-left: 8px; }
+    box-flex: 0; }
   .col-sm-1 {
     box-sizing: border-box;
     flex: 0 0 auto;
     position: relative;
     flex-basis: 8.33333%;
-    max-width: 8.33333%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 8.33333%; }
   .col-sm-offset-1 {
     box-sizing: border-box;
     position: relative;
@@ -231,9 +211,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 16.66667%;
-    max-width: 16.66667%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 16.66667%; }
   .col-sm-offset-2 {
     box-sizing: border-box;
     position: relative;
@@ -243,9 +221,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 25%;
-    max-width: 25%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 25%; }
   .col-sm-offset-3 {
     box-sizing: border-box;
     position: relative;
@@ -255,9 +231,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 33.33333%;
-    max-width: 33.33333%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 33.33333%; }
   .col-sm-offset-4 {
     box-sizing: border-box;
     position: relative;
@@ -267,9 +241,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 41.66667%;
-    max-width: 41.66667%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 41.66667%; }
   .col-sm-offset-5 {
     box-sizing: border-box;
     position: relative;
@@ -279,9 +251,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 50%;
-    max-width: 50%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 50%; }
   .col-sm-offset-6 {
     box-sizing: border-box;
     position: relative;
@@ -291,9 +261,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 58.33333%;
-    max-width: 58.33333%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 58.33333%; }
   .col-sm-offset-7 {
     box-sizing: border-box;
     position: relative;
@@ -303,9 +271,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 66.66667%;
-    max-width: 66.66667%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 66.66667%; }
   .col-sm-offset-8 {
     box-sizing: border-box;
     position: relative;
@@ -315,9 +281,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 75%;
-    max-width: 75%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 75%; }
   .col-sm-offset-9 {
     box-sizing: border-box;
     position: relative;
@@ -327,9 +291,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 83.33333%;
-    max-width: 83.33333%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 83.33333%; }
   .col-sm-offset-10 {
     box-sizing: border-box;
     position: relative;
@@ -339,9 +301,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 91.66667%;
-    max-width: 91.66667%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 91.66667%; }
   .col-sm-offset-11 {
     box-sizing: border-box;
     position: relative;
@@ -351,9 +311,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 100%;
-    max-width: 100%;
-    padding-right: 8px;
-    padding-left: 8px; }
+    max-width: 100%; }
   .col-sm-offset-12 {
     box-sizing: border-box;
     position: relative;
@@ -389,25 +347,26 @@
     .row.no-gutter {
       margin-right: 0;
       margin-left: 0; }
-  .no-gutter [class^='col-'] {
-    padding-right: 0;
-    padding-left: 0; }
+  [class^='myclass'], [class*=' myclass']
+[class^='col-'], [class*='col-'] {
+    padding-right: 12px;
+    padding-left: 12px; }
+    .no-gutter [class^='myclass'], .no-gutter [class*=' myclass']
+[class^='col-'], .no-gutter [class*='col-'] {
+      padding-right: 0;
+      padding-left: 0; }
   .col-md {
     flex-grow: 1;
     flex-basis: 0;
     max-width: 100%;
     box-sizing: border-box;
-    box-flex: 0;
-    padding-right: 12px;
-    padding-left: 12px; }
+    box-flex: 0; }
   .col-md-1 {
     box-sizing: border-box;
     flex: 0 0 auto;
     position: relative;
     flex-basis: 8.33333%;
-    max-width: 8.33333%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 8.33333%; }
   .col-md-offset-1 {
     box-sizing: border-box;
     position: relative;
@@ -417,9 +376,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 16.66667%;
-    max-width: 16.66667%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 16.66667%; }
   .col-md-offset-2 {
     box-sizing: border-box;
     position: relative;
@@ -429,9 +386,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 25%;
-    max-width: 25%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 25%; }
   .col-md-offset-3 {
     box-sizing: border-box;
     position: relative;
@@ -441,9 +396,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 33.33333%;
-    max-width: 33.33333%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 33.33333%; }
   .col-md-offset-4 {
     box-sizing: border-box;
     position: relative;
@@ -453,9 +406,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 41.66667%;
-    max-width: 41.66667%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 41.66667%; }
   .col-md-offset-5 {
     box-sizing: border-box;
     position: relative;
@@ -465,9 +416,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 50%;
-    max-width: 50%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 50%; }
   .col-md-offset-6 {
     box-sizing: border-box;
     position: relative;
@@ -477,9 +426,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 58.33333%;
-    max-width: 58.33333%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 58.33333%; }
   .col-md-offset-7 {
     box-sizing: border-box;
     position: relative;
@@ -489,9 +436,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 66.66667%;
-    max-width: 66.66667%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 66.66667%; }
   .col-md-offset-8 {
     box-sizing: border-box;
     position: relative;
@@ -501,9 +446,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 75%;
-    max-width: 75%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 75%; }
   .col-md-offset-9 {
     box-sizing: border-box;
     position: relative;
@@ -513,9 +456,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 83.33333%;
-    max-width: 83.33333%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 83.33333%; }
   .col-md-offset-10 {
     box-sizing: border-box;
     position: relative;
@@ -525,9 +466,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 91.66667%;
-    max-width: 91.66667%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 91.66667%; }
   .col-md-offset-11 {
     box-sizing: border-box;
     position: relative;
@@ -537,9 +476,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 100%;
-    max-width: 100%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 100%; }
   .col-md-offset-12 {
     box-sizing: border-box;
     position: relative;
@@ -575,25 +512,26 @@
     .row.no-gutter {
       margin-right: 0;
       margin-left: 0; }
-  .no-gutter [class^='col-'] {
-    padding-right: 0;
-    padding-left: 0; }
+  [class^='myclass'], [class*=' myclass']
+[class^='col-'], [class*='col-'] {
+    padding-right: 12px;
+    padding-left: 12px; }
+    .no-gutter [class^='myclass'], .no-gutter [class*=' myclass']
+[class^='col-'], .no-gutter [class*='col-'] {
+      padding-right: 0;
+      padding-left: 0; }
   .col-lg {
     flex-grow: 1;
     flex-basis: 0;
     max-width: 100%;
     box-sizing: border-box;
-    box-flex: 0;
-    padding-right: 12px;
-    padding-left: 12px; }
+    box-flex: 0; }
   .col-lg-1 {
     box-sizing: border-box;
     flex: 0 0 auto;
     position: relative;
     flex-basis: 8.33333%;
-    max-width: 8.33333%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 8.33333%; }
   .col-lg-offset-1 {
     box-sizing: border-box;
     position: relative;
@@ -603,9 +541,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 16.66667%;
-    max-width: 16.66667%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 16.66667%; }
   .col-lg-offset-2 {
     box-sizing: border-box;
     position: relative;
@@ -615,9 +551,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 25%;
-    max-width: 25%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 25%; }
   .col-lg-offset-3 {
     box-sizing: border-box;
     position: relative;
@@ -627,9 +561,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 33.33333%;
-    max-width: 33.33333%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 33.33333%; }
   .col-lg-offset-4 {
     box-sizing: border-box;
     position: relative;
@@ -639,9 +571,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 41.66667%;
-    max-width: 41.66667%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 41.66667%; }
   .col-lg-offset-5 {
     box-sizing: border-box;
     position: relative;
@@ -651,9 +581,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 50%;
-    max-width: 50%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 50%; }
   .col-lg-offset-6 {
     box-sizing: border-box;
     position: relative;
@@ -663,9 +591,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 58.33333%;
-    max-width: 58.33333%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 58.33333%; }
   .col-lg-offset-7 {
     box-sizing: border-box;
     position: relative;
@@ -675,9 +601,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 66.66667%;
-    max-width: 66.66667%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 66.66667%; }
   .col-lg-offset-8 {
     box-sizing: border-box;
     position: relative;
@@ -687,9 +611,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 75%;
-    max-width: 75%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 75%; }
   .col-lg-offset-9 {
     box-sizing: border-box;
     position: relative;
@@ -699,9 +621,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 83.33333%;
-    max-width: 83.33333%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 83.33333%; }
   .col-lg-offset-10 {
     box-sizing: border-box;
     position: relative;
@@ -711,9 +631,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 91.66667%;
-    max-width: 91.66667%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 91.66667%; }
   .col-lg-offset-11 {
     box-sizing: border-box;
     position: relative;
@@ -723,9 +641,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 100%;
-    max-width: 100%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 100%; }
   .col-lg-offset-12 {
     box-sizing: border-box;
     position: relative;
@@ -761,25 +677,26 @@
     .row.no-gutter {
       margin-right: 0;
       margin-left: 0; }
-  .no-gutter [class^='col-'] {
-    padding-right: 0;
-    padding-left: 0; }
+  [class^='myclass'], [class*=' myclass']
+[class^='col-'], [class*='col-'] {
+    padding-right: 12px;
+    padding-left: 12px; }
+    .no-gutter [class^='myclass'], .no-gutter [class*=' myclass']
+[class^='col-'], .no-gutter [class*='col-'] {
+      padding-right: 0;
+      padding-left: 0; }
   .col-xl {
     flex-grow: 1;
     flex-basis: 0;
     max-width: 100%;
     box-sizing: border-box;
-    box-flex: 0;
-    padding-right: 12px;
-    padding-left: 12px; }
+    box-flex: 0; }
   .col-xl-1 {
     box-sizing: border-box;
     flex: 0 0 auto;
     position: relative;
     flex-basis: 8.33333%;
-    max-width: 8.33333%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 8.33333%; }
   .col-xl-offset-1 {
     box-sizing: border-box;
     position: relative;
@@ -789,9 +706,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 16.66667%;
-    max-width: 16.66667%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 16.66667%; }
   .col-xl-offset-2 {
     box-sizing: border-box;
     position: relative;
@@ -801,9 +716,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 25%;
-    max-width: 25%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 25%; }
   .col-xl-offset-3 {
     box-sizing: border-box;
     position: relative;
@@ -813,9 +726,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 33.33333%;
-    max-width: 33.33333%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 33.33333%; }
   .col-xl-offset-4 {
     box-sizing: border-box;
     position: relative;
@@ -825,9 +736,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 41.66667%;
-    max-width: 41.66667%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 41.66667%; }
   .col-xl-offset-5 {
     box-sizing: border-box;
     position: relative;
@@ -837,9 +746,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 50%;
-    max-width: 50%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 50%; }
   .col-xl-offset-6 {
     box-sizing: border-box;
     position: relative;
@@ -849,9 +756,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 58.33333%;
-    max-width: 58.33333%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 58.33333%; }
   .col-xl-offset-7 {
     box-sizing: border-box;
     position: relative;
@@ -861,9 +766,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 66.66667%;
-    max-width: 66.66667%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 66.66667%; }
   .col-xl-offset-8 {
     box-sizing: border-box;
     position: relative;
@@ -873,9 +776,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 75%;
-    max-width: 75%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 75%; }
   .col-xl-offset-9 {
     box-sizing: border-box;
     position: relative;
@@ -885,9 +786,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 83.33333%;
-    max-width: 83.33333%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 83.33333%; }
   .col-xl-offset-10 {
     box-sizing: border-box;
     position: relative;
@@ -897,9 +796,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 91.66667%;
-    max-width: 91.66667%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 91.66667%; }
   .col-xl-offset-11 {
     box-sizing: border-box;
     position: relative;
@@ -909,9 +806,7 @@
     flex: 0 0 auto;
     position: relative;
     flex-basis: 100%;
-    max-width: 100%;
-    padding-right: 12px;
-    padding-left: 12px; }
+    max-width: 100%; }
   .col-xl-offset-12 {
     box-sizing: border-box;
     position: relative;
@@ -939,12 +834,3 @@
     order: -1; }
   .last-xl {
     order: 1; } }
-
-.my-custom-column {
-  box-sizing: border-box;
-  flex: 0 0 auto;
-  position: relative;
-  flex-basis: 25%;
-  max-width: 25%;
-  padding-right: 8;
-  padding-left: 8; }
