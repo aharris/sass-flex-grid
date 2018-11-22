@@ -21,7 +21,10 @@
 			}
 		}
 
-		[class^='#{$sfg-prefix}col-'] {
+		[class^='myclass'], [class*=' myclass']
+		[class^='#{$sfg-prefix}col-'], [class*='#{$sfg-prefix}col-'] {
+			@include col-gutter(map-get($map, gutter));
+
 			.no-gutter & {
 				padding-right: 0;
 				padding-left: 0;
@@ -34,9 +37,6 @@
 			max-width: 100%;
 			box-sizing: border-box;
 			box-flex: 0;
-
-			@include col-gutter(map-get($map, gutter));
-
 		}
 
     @for $i from 1 through map-get($map, columns) {

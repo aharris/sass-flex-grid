@@ -4,7 +4,6 @@
 	position: relative;
 	flex-basis: $ratios * 100 + unquote("%");
 	max-width: $ratios * 100 + unquote("%");
-	@include col-gutter($gutter)
 }
 
 @mixin col-gutter($gutter: 0) {
