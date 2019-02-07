@@ -1,6 +1,6 @@
 {
   "name": "sass-flex-grid",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Flexbox grid for sass (scss). Inspired by http://flexboxgrid.com/",
   "main": "index.js",
   "watch": {
