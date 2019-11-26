@@ -1,20 +1,20 @@
-@mixin col($ratios:1, $gutter: 0) {
-	box-sizing: border-box;
-	flex: 0 0 auto;
-	position: relative;
-	flex-basis: $ratios * 100 + unquote("%");
-	max-width: $ratios * 100 + unquote("%");
+@mixin col($ratios: 1, $gutter: 0) {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  position: relative;
+  flex-basis: $ratios * 100 + unquote("%");
+  max-width: $ratios * 100 + unquote("%");
 }
 
 @mixin col-gutter($gutter: 0) {
-	padding-right: $gutter / 2;
-	padding-left: $gutter / 2;
+  padding-right: $gutter / 2;
+  padding-left: $gutter / 2;
 }
 
-@mixin offset($ratios:1) {
-	box-sizing: border-box;
-	position: relative;
-	margin-left: $ratios * 100%;
+@mixin offset($ratios: 1) {
+  box-sizing: border-box;
+  position: relative;
+  margin-left: $ratios * 100%;
 }
 
 @mixin row() {
@@ -26,53 +26,54 @@
 }
 
 @mixin row-gutter($gutter: 0) {
-	margin-right: -#{$gutter / 2};
-	margin-left: -#{$gutter / 2};
+  margin-right: -#{$gutter / 2};
+  margin-left: -#{$gutter / 2};
 }
 
 @mixin row-reverse() {
-	flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 @mixin start() {
-	justify-content: flex-start;
-	text-align: start;
+  justify-content: flex-start;
+  text-align: start;
 }
 
 @mixin center {
-	justify-content: center;
-	text-align: center;
+  justify-content: center;
+  text-align: center;
 }
 
 @mixin end {
-	justify-content: flex-end;
-	text-align: end;
+  justify-content: flex-end;
+  text-align: right;
+  text-align: end;
 }
 
 @mixin top {
-	align-items: flex-start;
+  align-items: flex-start;
 }
 
 @mixin middle {
-	align-items: center;
+  align-items: center;
 }
 
 @mixin bottom {
-	align-items: flex-end;
+  align-items: flex-end;
 }
 
 @mixin around {
-	justify-content: space-around;
+  justify-content: space-around;
 }
 
 @mixin between {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
 @mixin first {
-	order: -1;
+  order: -1;
 }
 
 @mixin last {
-	order: 1;
+  order: 1;
 }
