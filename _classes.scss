@@ -21,7 +21,6 @@
 			}
 		}
 
-		[class^='myclass'], [class*=' myclass']
 		[class^='#{$sfg-prefix}col-'], [class*='#{$sfg-prefix}col-'] {
 			@include col-gutter(map-get($map, gutter));
 
