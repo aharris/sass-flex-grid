@@ -34,7 +34,7 @@
   "devDependencies": {
     "concurrently": "^3.5.1",
     "live-server": "1.2.1",
-    "node-sass": "4.12.0",
+    "node-sass": "4.13.1",
     "npm-watch": "0.3.0"
   }
 }
