@@ -1,89 +1,115 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 h1 {
   font-size: 36px;
   font-weight: 800;
-  color: midnightBlue; }
+  color: midnightBlue;
+}
 
 h2 {
   font-size: 24px;
-  font-weight: 800; }
+  font-weight: 800;
+}
 
 h3 {
   font-size: 20px;
-  font-weight: 800; }
+  font-weight: 800;
+}
 
 h4 {
   font-size: 20px;
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 h5 {
   font-size: 18px;
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 body {
   color: #333;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   background: #ecf0f1;
-  margin: 0; }
+  margin: 0;
+}
 
 header {
   background: #2c3e50;
-  padding: 1em; }
-  header h1 {
-    font-size: 48px; }
-  header h3 {
-    margin-top: 2em;
-    margin-bottom: 1em; }
-  header h1, header p, header h2, header h3 {
-    color: #fff; }
-  header a {
-    color: #fff; }
-  header code {
-    background: #ecf0f1;
-    padding: 1em;
-    margin-bottom: 1em; }
+  padding: 1em;
+}
+header h1 {
+  font-size: 48px;
+}
+header h3 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+header h1, header p, header h2, header h3 {
+  color: #fff;
+}
+header a {
+  color: #fff;
+}
+header code {
+  background: #ecf0f1;
+  padding: 1em;
+  margin-bottom: 1em;
+}
 
 .container {
   padding: 48px;
-  position: relative; }
+  position: relative;
+}
 
 .page-section {
-  padding: 48px; }
+  padding: 48px;
+}
 
 .links {
   position: absolute;
   right: 24px;
-  top: 24px; }
-  .links a {
-    width: 120px;
-    display: inline-block;
-    padding: 1em; }
-  .links img {
-    max-width: 100%; }
+  top: 24px;
+}
+.links a {
+  width: 120px;
+  display: inline-block;
+  padding: 1em;
+}
+.links img {
+  max-width: 100%;
+}
 
 .row-span, .row-col {
   margin-top: 8px;
-  margin-bottom: 8px; }
-  .row-span > div:last-child .inner, .row-col > div:last-child .inner {
-    margin-bottom: 0; }
+  margin-bottom: 8px;
+}
+.row-span > div:last-child .inner, .row-col > div:last-child .inner {
+  margin-bottom: 0;
+}
 
 .box, .box-row, .box-large {
   background-color: #2980b9;
   margin-bottom: 8px;
   text-align: center;
   color: #fff;
-  padding: 1em; }
+  padding: 1em;
+}
 
 .box-first, .box-nested {
   background-color: rgba(0, 0, 0, 0.25);
-  padding: 1em; }
+  padding: 1em;
+}
 
 .box-large {
-  height: 8em; }
+  height: 8em;
+}
 
 .no-gutter .col-xs:nth-child(odd) .box {
-  background-color: #3498db; }
+  background-color: #3498db;
+}
+
+/*# sourceMappingURL=index.css.map */

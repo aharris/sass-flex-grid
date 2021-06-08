@@ -12,9 +12,9 @@
     }
   },
   "scripts": {
-    "build:scss": "node-sass docs/index.scss docs/dist/index.css",
-    "build:lib:scss": "node-sass index.scss docs/dist/grid.css",
-    "start": "node-sass index.scss docs/dist/grid.css && concurrently \"npm run watch\" \"live-server --port=8000 --open='docs' --watch='docs'\"",
+    "build:scss": "sass docs/index.scss docs/dist/index.css",
+    "build:lib:scss": "sass index.scss docs/dist/grid.css",
+    "start": "sass index.scss docs/dist/grid.css && concurrently \"npm run watch\" \"live-server --port=8000 --open='docs' --watch='docs'\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npm-watch"
   },
@@ -32,9 +32,9 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
-    "concurrently": "^3.5.1",
+    "concurrently": "^6.2.0",
     "live-server": "1.2.1",
-    "node-sass": "4.12.0",
-    "npm-watch": "0.3.0"
+    "npm-watch": "^0.9.0",
+    "sass": "^1.34.1"
   }
 }
