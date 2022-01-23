@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.0 (2021-01-23)
+
+### Updates
+
+- Update `node-sass` to `7.0.1`
+
+
 ## 1.0.7 (2019-11-26)
 
 ### Bug Fixes

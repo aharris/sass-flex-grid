@@ -70,7 +70,7 @@ $grid-prefix: '';
 You can add as many or as few as you would like!
 
 ```
-$grid-breakpoints: (: (
+$grid-breakpoints: (
 	extra-small: (
 		name: xs, // ".col-xs-*"
 		columns: 4, // 4 colums at this breakpoint
