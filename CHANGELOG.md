@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.0.0 (2021-01-28)
+
+### Changes
+
+- `mq` mixin no longer needs breakpoints passed in as a param
+- updated calculations for DART 2.0 support 
+
+### Updates
+
+- Update `node-sass` to `7.0.1`
+
 ## 1.1.0 (2021-01-23)
 
 ### Updates

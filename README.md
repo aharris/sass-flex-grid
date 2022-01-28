@@ -117,3 +117,18 @@ Example:
 	<div class="namespace-col-xs"><div class="box"></div></div>
 </div>
 ```
+
+
+### Helpers
+
+#### Media Queries
+
+You can use each grid breakpoint name as a media query in you scss as well.
+
+Example:
+
+```
+@include mq('medium') {
+  ...
+}
+```
