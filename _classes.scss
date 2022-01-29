@@ -42,7 +42,9 @@
       .#{$sfg-prefix}col-#{map-get($map, name)}-#{$i} {
 				@include col($i/map-get($map, columns), map-get($map, gutter));
       }
+    }
 
+    @for $i from 0 through map-get($map, columns) {
       .#{$sfg-prefix}col-#{map-get($map, name)}-offset-#{$i} {
 				@include offset($i/map-get($map, columns));
       }
