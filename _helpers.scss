@@ -1,6 +1,13 @@
-@mixin mq($mq-breakpoint, $mq-breakpoints: $sfg-breakpoints) {
-	@if map-has-key($mq-breakpoints, $mq-breakpoint) {
-	  $mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+      $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+@mixin mq($mq-breakpoint) {
+	@if map-has-key($sfg-breakpoints, $mq-breakpoint) {
+    $mq-breakpoint: map-deep-get($sfg-breakpoints, $mq-breakpoint, "min-width");
 	}
 
 	@media screen and (min-width: #{$mq-breakpoint}) {
