@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .#{$sfg-prefix}row-span, .#{$sfg-prefix}row {
 	@include row();
 
@@ -40,11 +42,11 @@
 
     @for $i from 1 through map-get($map, columns) {
       .#{$sfg-prefix}col-#{map-get($map, name)}-#{$i} {
-				@include col($i / map-get($map, columns), map-get($map, gutter));
+				@include col(math.div($i, map-get($map, columns)), map-get($map, gutter));
       }
 
       .#{$sfg-prefix}col-#{map-get($map, name)}-offset-#{$i} {
-				@include offset($i/map-get($map, columns));
+				@include offset(math.div($i, map-get($map, columns)));
       }
     }
 
