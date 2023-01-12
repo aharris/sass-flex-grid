@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "concurrently": "7.0.0",
-    "live-server": "1.2.0",
+    "live-server": "1.2.2",
     "npm-watch": "0.11.0",
     "sass": "1.53.0"
   }
